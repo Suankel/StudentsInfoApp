@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="767.0" styleClass="background" stylesheets="@css/Authorization.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.AuthorizationWindowController">
+   <children>
+      <ImageView fitHeight="380.0" fitWidth="451.0" layoutX="90.0" opacity="0.15" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@img/University.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="loginField" layoutX="100.0" layoutY="78.0" prefHeight="50.0" prefWidth="400.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+      <PasswordField fx:id="passwordField" layoutX="100.0" layoutY="172.0" prefHeight="50.0" prefWidth="400.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+      <Button fx:id="enterBtn" layoutX="200.0" layoutY="396.0" mnemonicParsing="false" onAction="#loginAndChooseWindow" prefHeight="100.0" prefWidth="250.0" text="Войти" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+      <Label layoutX="101.0" layoutY="51.0" prefHeight="25.0" prefWidth="376.0" text="Логин" />
+      <Label layoutX="101.0" layoutY="145.0" prefHeight="25.0" prefWidth="376.0" text="Пароль" />
+      <RadioButton fx:id="infoStudents" layoutX="100.0" layoutY="277.0" mnemonicParsing="false" styleClass="radiobutton" text="Информация о студентах" />
+      <RadioButton fx:id="infoExams" layoutX="100.0" layoutY="329.0" mnemonicParsing="false" styleClass="radiobutton" text="Информация об экзаменах" />
+   </children>
+</AnchorPane>
