@@ -1,0 +1,201 @@
+.background {
+    -fx-background-color: #6F90AC;
+}
+
+.checkbox {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.combobox {
+	-fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+	-fx-background-color: #D2E4E9;
+	-fx-text-fill: #24455B;
+}
+
+.datepicker {
+	-fx-background-color: #D2E4E9;
+	-fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+	-fx-text-fill: #24455B;
+    -fx-opacity: 0.8;
+}
+
+.datepicker .text-field {
+	-fx-background-color: #D2E4E9;
+	-fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.8;
+}
+
+.datepicker .contextMenu {
+	-fx-background-color: #094455;
+	-fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.8;
+}
+
+.label {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-course {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.table-view {
+    -fx-base: #5F84A4;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #5F84A4;
+    -fx-table-cell-border-color: #245986;
+    -fx-table-header-border-color: #245986;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #1d1d1d transparent #1d1d1d;
+    -fx-background-color: transparent, derive(#1d1d1d,20%);
+}
+
+.split-pane {
+    -fx-padding: 1 0 0 0;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#1d1d1d,20%);
+}
+
+.context-menu {
+    -fx-background-color: derive(#1d1d1d,50%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu .left-container {
+    -fx-background-color: black;
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semilight";
+	-fx-text-fill: #24455B;
+}
+
+.text-field .promtText {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Light";
+	-fx-text-fill: #74ABD0;
+}
+
+/* 
+ * Push Button в стиле Metro 
+ * Автор: Pedro Duque Vieira
+ * http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/
+ */
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #315B77;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 12pt;
+    -fx-text-fill: #f8f8f8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #72A2C1;
+	-fx-opacity: 1;
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-text-fill: #1F4056;
+	-fx-border-color: #1F4056;
+	
+}
+
+.button:pressed {
+  -fx-background-color: #8DC1E3;
+  -fx-text-fill: #1F4056;
+}
+
+.button:default {
+    -fx-background-color: #C89468;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+  	-fx-background-color: #EBBF99;
+	-fx-text-fill: #865B36;
+	-fx-border-color: #ffffff;
+}
+
+.button:default:pressed {
+	-fx-background-color: #F7D3B4;
+	-fx-text-fill: #865B36;
+	-fx-border-color: #ffffff;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
