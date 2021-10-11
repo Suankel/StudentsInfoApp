@@ -174,41 +174,5 @@ public class Main extends Application {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
 
         launch(args);
-    /*    Statement statement;
-        ObservableList<NoteOfExam> list = FXCollections.observableArrayList();
-        NoteOfExam noteOfExam;
-        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        System.out.println("Пробуем");
-        String url = "jdbc:sqlserver://localhost:1433;databaseName=Education_System";
-        String user = "sa";
-        String password = "tanpasogo";
-        Connection dbConnection = DriverManager.getConnection(url,user,password);
-        DataBaseController dataBaseController = new DataBaseController();
-
-            statement = dbConnection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM Exams_List");
-
-            while (resultSet.next()) {
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-                LocalDate dateOfExam = LocalDate.parse(resultSet.getString("Date_Of_Exam"), formatter);
-                LocalTime time_in = LocalTime.parse((resultSet.getString("Time_IN")));
-                LocalTime time_out = LocalTime.parse((resultSet.getString("Time_OUT")));
-                noteOfExam = new NoteOfExam(dateOfExam, time_in, time_out);
-
-                int noteID = Integer.parseInt(resultSet.getString("ID"));
-                int groupID = Integer.parseInt(resultSet.getString("Group"));
-
-                String subject = dataBaseController.printNameByID("DISTINCT Name", "Subjects",
-                        "WHERE ID = ", resultSet.getString("Subject_ID"));
-                String professorFIO = dataBaseController.printNameByID("DISTINCT FIO", "Professors",
-                        "WHERE ID = ", resultSet.getString("Professor_ID"));
-                noteOfExam.setNoteID(noteID);
-                noteOfExam.setSubject(subject);
-                noteOfExam.setProfessorsFIO(professorFIO);
-                noteOfExam.setGroupID(groupID);
-                list.add(noteOfExam);
-            }
-        System.out.println(list.get(0).dateOfExamProperty().getValue());
-        System.out.println(list.get(0).time_inProperty().getValue());*/
     }
 }
