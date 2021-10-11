@@ -1,0 +1,112 @@
+.background {
+    -fx-background-color: #6F90AC;
+}
+
+.label {
+	-fx-font-weight: bold;
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+	
+}
+
+.menu-bar {
+    -fx-background-color: derive(#1d1d1d,20%);
+}
+
+.context-menu {
+    -fx-background-color: derive(#1d1d1d,50%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu .left-container {
+    -fx-background-color: black;
+}
+
+.radiobutton {
+	-fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Light";
+	-fx-text-fill: white;
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Light";
+	-fx-text-fill: #315B77;
+}
+
+.text-field .promtText {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Light";
+	-fx-text-fill: #74ABD0;
+
+}
+
+/* 
+ * Push Button в стиле Metro 
+ * Автор: Pedro Duque Vieira
+ * http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/
+ */
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #315B77;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14pt;
+    -fx-text-fill: #f8f8f8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #72A2C1;
+	-fx-opacity: 1;
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-text-fill: #1F4056;
+	-fx-border-color: #1F4056;
+	
+}
+
+.button:pressed {
+  -fx-background-color: #8DC1E3;
+  -fx-text-fill: #1F4056;
+}
+
+.button:default {
+    -fx-background-color: #C89468;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+  	-fx-background-color: #EBBF99;
+	-fx-text-fill: #865B36;
+	-fx-border-color: #ffffff;
+}
+
+.button:default:pressed {
+	-fx-background-color: #F7D3B4;
+	-fx-text-fill: #865B36;
+	-fx-border-color: #ffffff;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
