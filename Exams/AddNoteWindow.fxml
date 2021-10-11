@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="551.0" prefWidth="800.0" styleClass="background" stylesheets="@../css/AddNote.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.Exams.AddNoteWindowController">
+   <children>
+      <ComboBox fx:id="subjectBox" layoutX="79.0" layoutY="67.0" prefHeight="37.0" prefWidth="600.0" styleClass="combobox" />
+      <ComboBox fx:id="professorBox" layoutX="79.0" layoutY="159.0" prefHeight="35.0" prefWidth="258.0" styleClass="combobox" />
+      <Label layoutX="79.0" layoutY="32.0" prefHeight="35.0" prefWidth="258.0" text="Дисциплина" />
+      <Label layoutX="79.0" layoutY="124.0" prefHeight="35.0" prefWidth="258.0" text="Преподаватель" />
+      <ComboBox fx:id="specialityBox" layoutX="79.0" layoutY="256.0" prefHeight="35.0" prefWidth="258.0" styleClass="combobox" />
+      <Label layoutX="79.0" layoutY="222.0" prefHeight="35.0" prefWidth="258.0" text="Специальность" />
+      <ComboBox fx:id="groupBox" layoutX="79.0" layoutY="355.0" prefHeight="35.0" prefWidth="258.0" styleClass="combobox" />
+      <Label layoutX="79.0" layoutY="320.0" prefHeight="35.0" prefWidth="258.0" text="Группа" />
+      <ComboBox fx:id="time_in_Box" layoutX="422.0" layoutY="256.0" prefHeight="35.0" prefWidth="258.0" styleClass="combobox" />
+      <Label layoutX="422.0" layoutY="221.0" prefHeight="35.0" prefWidth="258.0" text="Время начала" />
+      <ComboBox fx:id="time_out_Box" layoutX="422.0" layoutY="354.0" prefHeight="35.0" prefWidth="258.0" styleClass="combobox" />
+      <Label layoutX="422.0" layoutY="319.0" prefHeight="35.0" prefWidth="258.0" text="Время завершения" />
+      <Label layoutX="422.0" layoutY="123.0" prefHeight="35.0" prefWidth="258.0" text="Дата" />
+      <Button fx:id="addBtn" layoutX="85.0" layoutY="436.0" mnemonicParsing="false" onAction="#addNoteToDB" prefHeight="80.0" prefWidth="258.0" text="Добавить" />
+      <Button layoutX="422.0" layoutY="436.0" mnemonicParsing="false" onAction="#closeDialogStage" prefHeight="80.0" prefWidth="258.0" text="Закрыть" />
+      <DatePicker fx:id="dateOfExam" layoutX="422.0" layoutY="158.0" prefHeight="37.0" prefWidth="258.0" styleClass="datepicker" />
+   </children>
+</AnchorPane>
