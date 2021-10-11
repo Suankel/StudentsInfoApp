@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="518.0" prefWidth="1219.0" styleClass="background" stylesheets="@../css/ExamsList.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.Exams.ExamsListController">
+   <children>
+      <SplitPane dividerPositions="0.5" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="1100.0" prefHeight="525.0" prefWidth="900.0">
+               <children>
+                  <Pagination fx:id="pagination" layoutY="-32.0" maxPageIndicatorCount="0" minHeight="-Infinity" pageCount="0" prefHeight="567.0" prefWidth="1100.0" stylesheets="@../css/ExamsList.css" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Label fx:id="infoLabel" layoutX="34.0" layoutY="470.0" prefHeight="36.0" prefWidth="833.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="deleteBtn" layoutX="23.0" layoutY="154.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deleteNoteFromDB" prefHeight="45.0" prefWidth="45.0" styleClass="button-icon" />
+                  <Button fx:id="returnBtn" layoutX="25.0" layoutY="237.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#closeDialogStage" prefHeight="45.0" prefWidth="45.0" styleClass="button-icon" />
+                  <Button fx:id="addBtn" layoutX="23.0" layoutY="69.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addNote" prefHeight="45.0" prefWidth="45.0" styleClass="button-icon" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
