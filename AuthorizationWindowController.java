@@ -41,7 +41,7 @@ public class AuthorizationWindowController {
     @FXML
     private void loginAndChooseWindow() {
 
-        if (loginField.getText().equals("Prof") && (passwordField.getText().equals("Q123"))) {
+        if (loginField.getText().equals("Prof") && (passwordField.getText().equals("Q12) {
         if (infoStudents.isSelected())
             mainApp.showStudentsOverView();
         if (infoExams.isSelected())
